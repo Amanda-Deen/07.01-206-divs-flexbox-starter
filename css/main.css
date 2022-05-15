@@ -100,6 +100,7 @@ html {
   background: url(../img/bkgd.jpg)no-repeat center;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -109,11 +110,47 @@ body {
   height: 100%;
 }
 
+header,
+footer,
+main {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: .5em;
+}
+
+header,
+main {
+  background-color: #222;
+  background:rgba(0,0,0,0.7);
+  border-radius: 10px;
+  color: #fff;
+}
+
+header {
+  font-size: 1.75em;
+  font-weight: bold;
+  height: 80px;
+  padding: .5em;
+}
+
+main {
+  padding: 1em;
+}
+
+footer {
+  height: 100px;
+}
+  
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 400;
   display: flex;
-  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -135,9 +172,36 @@ body {
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+#contact ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#contact ul li{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+
+#contact #envelope{
+  padding: 0 10px 0 115px;
+}
+
+#email {
+    text-decoration: none;
+    color: #c49075;
+    padding: 1.5em;
+    margin: 1.5em;
+}
 
 /* ==========================================================================
    Helper classes
